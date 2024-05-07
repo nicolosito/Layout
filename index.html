@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+
+<style>
+
+    body {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    p {
+        text-align: center;
+    }
+</style>
+
+
+<body>
+
+    <p>Ejercicio 1</p>
+
+    <div>
+        <span>🤖</span>
+        <span>RobotWeb</span>
+        <span>🔎</span>
+    </div>
+    
+    <img src="uno.webp">
+    <img src="dos.webp">
+    <img src="tres.webp">
+    <img src="cuatro.webp">
+
+    <div2>
+        <p>Welcome to RobotWeb</p>
+    </div2>
+
+    <style>
+        img {width: 60px}
+
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        div {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        div2 {
+            display: flex;
+            background-color: grey;
+            align-items: center;
+            justify-content: space-around;
+            flex: 1 200px;
+        }
+    </style>
+
+    <br><br><br>
+
+    <p>Ejercicio 2</p>
+
+    <section1>
+        <div>
+            <p>Estoy siempre centrado</p>
+        </div>
+    </section1>
+
+    <style>
+    section1 {
+        background-color: skyblue;
+        display: flex;
+        justify-content: center;
+        resize: both;
+        overflow: auto;
+    }
+
+    section1 div {
+        background-color: lightyellow;
+    }
+    </style>
+
+    <br><br><br>
+
+    <p>Ejercicio 3</p>
+
+    <section2>
+        <div contenteditable="true">
+            <p>Crezco hacia abajo y tengo un ancho máximo de 150px</p>
+        </div>
+        <div>
+            <p>Crezco hacia abajo y tengo un ancho máximo de 150px</p>
+        </div>
+        <div>
+            <p>Crezco hacia abajo y tengo un ancho máximo de 150px</p>
+        </div>
+    </section2>
+
+    <style>
+      section2 {
+        background-color: skyblue;
+        display: flex;
+        justify-content: center;
+        resize: both;
+        overflow: auto;
+        flex-wrap: wrap;
+    }
+    
+    section2 div {
+        background-color: lightyellow;
+        margin: 5px;
+        font-size: large;
+        flex: 0 1 150px;
+    }
+    </style>
+
+<br><br><br>
+
+    <p>Ejercicio 4</p>
+    
+    <section3>
+        <div1>
+            <p>Tengo un ancho mínimo de 150px, y un máximo del 25%</p>
+        </div1>
+        <div2>
+            <p>Ocupo el resto de espacio que sobra</p>
+        </div2>
+    </section3>
+
+    <style>
+    section3 {
+        display: grid;
+        overflow: auto;
+        resize: both;
+        grid-template-columns: minmax(150px, 25%) 1fr;
+    }
+
+    section3 div1 {
+        background-color: lightyellow;
+    }
+
+    section3 div2 {
+        background-color: lightpink;
+    }
+    </style>
+
+<br><br><br>
+
+    <p>Ejercicio 5</p>
+    
+    <section4>
+        <div1>
+            <p>Ocupo solo la altura que necesito</p>
+        </div1>
+        <div2>
+            <p>Ocupo el resto de la altura</p>
+        </div2>
+        <div3>
+            <p>Ocupo solo la altura que necesito</p>
+        </div3>
+    </section4>
+
+    <style>
+        section4 {
+            display: grid;
+            resize: both;
+            overflow: auto;
+            grid-template-rows: auto 1fr auto;
+        }
+
+        section4 div1 {
+            background-color: lightyellow;
+        }
+
+        section4 div2 {
+            background-color: lightsalmon;
+        }
+
+        section4 div3 {
+            background-color: lightpink;
+        }
+    </style>
+
+<br><br><br>
+
+    <p>Ejercicio 6</p>
+    
+    <section5>
+        <div1>
+            <p>Ocupo solo la altura que necesito</p>
+        </div1>
+        <div2>
+            <p>Ocupo el ancho que necesito y además crezco de altura</p>
+        </div2>
+        <div3>
+            <p>Ocupo el ancho restante y además crezco de altura</p>
+        </div3>
+        <div4>
+            <p>Ocupo el ancho que necesito y además crezco de altura</p>
+        </div4>
+        <div5>
+            <p>Ocupo solo la altura que necesito</p>
+        </div5>
+    </section5>
+
+    <style>
+        section5 {
+            resize: both;
+            overflow: auto;
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+            grid-template-rows: auto 1fr auto;
+        }
+
+        section5 div1 {
+            background-color: pink;
+            grid-column: 1/4;
+        }
+        section5 div2 {
+            background-color: blue;
+        }
+        section5 div3 {
+            background-color: salmon;
+        }
+        section5 div4 {
+            background-color: yellow;
+        }
+        section5 div5 {
+            background-color: green;
+            grid-column: 1/4;
+        }
+    </style>
+
+<br><br><br>
+
+    <p>Ejercicio 7</p>
+
+    <section6>
+        <div1>Tenemos un ancho minimo de 100px. Si no cabemos todos en una fila, ocupamos otra</div1>
+        <div2>Tenemos un ancho minimo de 100px. Si no cabemos todos en una fila, ocupamos otra</div2>
+        <div3>Tenemos un ancho minimo de 100px. Si no cabemos todos en una fila, ocupamos otra</div3>
+        <div4>Tenemos un ancho minimo de 100px. Si no cabemos todos en una fila, ocupamos otra</div4>
+    </section6>
+
+    <style>
+        section6 {
+            resize: both;
+            overflow: auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        }
+
+        section6 div1 {
+            background-color: pink;
+        }
+        section6 div2 {
+            background-color: blue;
+        }
+        section6 div3 {
+            background-color: salmon;
+        }
+        section6 div4 {
+            background-color: yellow;
+        }
+    </style>
+
+<br><br><br>
+
+    <p>Ejercicio 8</p>
+
+    <section7>
+        <div1>Tenemos un ancho de 100px. Si no cabemos todos en una fila ocupamos otra</div1>
+        <div2>Tenemos un ancho de 100px. Si no cabemos todos en una fila ocupamos otra</div2>
+        <div3>Tenemos un ancho de 100px. Si no cabemos todos en una fila ocupamos otra</div3>
+        <div4>Tenemos un ancho de 100px. Si no cabemos todos en una fila ocupamos otra</div4>
+    </section7>
+
+    <style>
+        section7 {
+            resize: both;
+            overflow: auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+            padding: 5px;
+            border: solid 0.5px;
+            border-color: cyan;
+        }
+
+        section7 div1 {
+            background-color: lightpink;
+        }
+        section7 div2 {
+            background-color: lightcyan;
+        }
+        section7 div3 {
+            background-color: salmon;
+        }
+        section7 div4 {
+            background-color: lightyellow;
+        }
+    </style>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <p>.</p>
+</body>
